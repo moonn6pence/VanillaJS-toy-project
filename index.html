@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanilla JS</title>
+  <script src="./main.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./imgs/moon_and_six_pence.png">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="menu">
+    <div class="menu__header">
+      <span class="menu__title">MENU</span>
+      <button class="menu__outBtn">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="menu__items">
+      <li class="menu__item">Modal</li>
+      <li class="menu__item">Slider</li>
+      <li class="menu__item">Drag and Drop</li>
+    </ul>
+    <hr>
+    <div class="menu__about">
+      <img src="./img/moon_and_six_pence.png" alt="avatar" class="about__image">
+      <div class="about__profile">
+        <span class="profile__desc">MoonN6ixpence<br>Dongguk Univ.<br>Junior Front-end Dev</span>
+        <a href="https://github.com/moonn6pence" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="menu__onBtn active">
+    <i class="fas fa-chevron-right"></i>
+  </div>
+  <div class="section__container">
+    <!-- Modal -->
+    <section class="modal">
+      <span class="modal-testBtn">Click here to test modal!</span>
+    </section>
+    <div class="modal-overlay">
+      <div class="modal-window">
+        <span class="modal-content">Sample modal window! You can exit modal window by click exit button, click outside
+          of modal or press ESC!
+        </span>
+        <button class="modal-shutDown">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Slider -->
+    <section class="slider">
+      Slider section
+      <div class="slider-contents">
+        <button class="slider-prevBtn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="slider-container">
+          <ul class="slider-items">
+            <li class="slider-item">first slide</li>
+            <li class="slider-item">second slide</li>
+            <li class="slider-item">third slide</li>
+            <li class="slider-item">fourth slide</li>
+            <li class="slider-item">fifth slide</li>
+          </ul>
+        </div>
+        <button class="slider-nextBtn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+    <!-- Drag and Drop -->
+    <section class="dnd">
+      Drag and drop section
+      <div class="dnd-zone">
+        <div class="zone-1">
+          <div class="dnd-item1" draggable="true"></div>
+        </div>
+        <div class="zone-2">
+          <div class="dnd-item2" draggable="true"></div>
+        </div>
+    </div>
+    </section>
+    <!-- File Upload -->
+    <section class="fileUpload">
+      File upload section
+      <div class="upload-zone">
+        <div class="upload-box">
+          <i class="fas fa-file-upload"></i>
+          <span class="box-desc">Upload files here.</span>
+        </div>
+        <ul class="upload-list">
+          <!-- <li class="list-item">
+            <span class="item-title">index.html</span>
+            <i class="fas fa-trash-alt"></i>
+          </li> -->
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
