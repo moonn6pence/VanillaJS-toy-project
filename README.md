@@ -1,2 +1,2 @@
 # vanillaJS-toy-project
- 4 features implemented
+> 5 features implemented
